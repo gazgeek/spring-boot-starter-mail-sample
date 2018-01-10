@@ -17,8 +17,8 @@ public class EmailTriggerController {
     public String triggerEmail() {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setText("Hello from Spring Boot Application");
-        message.setTo("prashantkhanal@gmail.com");
-        message.setFrom("prashantkhanal@gmail.com");
+        message.setTo("a-user@a-server.com");
+        message.setFrom("b-user@b-server.com");
         try {
             mailSender.send(message);
             return "{\"message\": \"OK\"}";
